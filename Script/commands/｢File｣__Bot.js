@@ -17,7 +17,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["আমি আবাল দের সাথে কথা বলি না,ok😒",];
+  var tl = ["আমি আবাল দের সাথে কথা বলি না😒",];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
     if ((event.body.toLowerCase() == ) || (event.body.toLowerCase() == "miss you")) {
