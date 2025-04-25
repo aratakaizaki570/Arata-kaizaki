@@ -17,7 +17,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["আমি আবাল দের সাথে কথা বলি না,ok😒",];
+  var tl = ["আমি আবাল দের সাথে কথা বলি না,ok😒" ,];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
     if ((event.body.toLowerCase() == ) || (event.body.toLowerCase() == "miss you")) {
@@ -62,15 +62,15 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
        
    };
 
-   if ((event.body.toLowerCase() == ) || (event.body.toLowerCase() == " owner")) {
-     return api.sendMessage("‎[𝐎𝐖𝐍𝐄𝐑:☞ Arata Kaizaki ☜\𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 Rohit.\n𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 :-https://www.facebook.com/share/19CHrrWkd1/তার সাতে যোগা যোগ করবেন", threadID);
+   if ((event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "")) {
+     return api.sendMessage("‎[𝐎𝐖𝐍𝐄𝐑:☞ Arata Kaizaki ☜\𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 Rohit.\n𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 :-https://www.facebook.com/share/19CHrrWkd1/তার সাতে যোগা যোগ করবেন WhatsApp :- ", threadID);
    };
 
    if ((event.body.toLowerCase() == ) || (event.body.toLowerCase() == )) {
      return api.sendMessage("My Creator:Arata kaizaki ❤️ হাই আমি মেছেন্জার ROBOT  আামার বস রহিত আমাকে বানিয়েছেন আপনাদের কে হাসানোর জন্য আমি চাই আপনারা সব সময় হাসি খুশি থাকেন", threadID);
    };
 
-  if ((event.body.toLowerCase() == ) || (event.body.toLowerCase() == "Admin")) {
+  if ((event.body.toLowerCase() == "admin") || (event.body.toLowerCase() == "")) {
      return api.sendMessage("He is Arata ❤️ তাকে সবাই রহিত নামে  চিনে🤙", threadID);
    };
 
